@@ -1,59 +1,30 @@
-# cookiecutter-design-docs
+cookiecutter-design-docs
+========================
 
-[![Tagged Release](https://img.shields.io/badge/release-v0-blue.svg?longCache=true)](CHANGELOG.md)
-[![Development Status](https://img.shields.io/badge/status-planning-lightgrey.svg?longCache=true)](ROADMAP.md)
-[![Build Status](https://img.shields.io/badge/build-unknown-lightgrey.svg?longCache=true)](https://travis-ci.org)
-[![Build Status](https://img.shields.io/badge/build-pending-lightgrey.svg?longCache=true)](https://www.appveyor.com)
-[![Build Coverage](https://img.shields.io/badge/coverage-0%25-lightgrey.svg?longCache=true)](https://codecov.io)
+Produces a skeleton for architectural design documentation using Cookiecutter
 
-> Design Documentation template using Cookiecutter.
+Requirements
+------------
 
-This project produces a project skeleton for design documentation.
+Install `cookiecutter` command line: `pip install cookiecutter`  
 
-_**Note:** This project was initially created by [cookiecutter-git](https://github.com/NathanUrwin/cookiecutter-git)!_ :cookie:
+Usage
+-----
 
-## Table of Contents
+To generate a design documentation project: `cookiecutter gh:bunchc/cookiecutter--design-docs`  
 
-- [Table of Contents](#table-of-contents)
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Development](#development)
-  - [Future](#future)
-  - [History](#history)
-  - [Community](#community)
-- [Credits](#credits)
-- [License](#license)
+To render your documentation: `bash make.sh`
 
-## Features
+Acknowledgements
+----------------
 
-## Requirements
+The document sections and structure were based on:
 
-## Installation
+- [Cloud Infrastructure Architecture Case Study (VMware)](https://www.vmware.com/techpapers/2012/cloud-infrastructure-architecture-case-study-10255.html)
+- [VCDX-DCV Architecture Outline (Derek Seaman)](https://www.derekseaman.com/2014/10/sample-vcdx-dcv-architecture-outline.html)
+- [VCDX Architecutre Document (Steve Duune)](http://www.virtuallyvirtuoso.com/vcdx-part-2-building-your-design/)
 
-## Usage
+License
+-------
 
-## Development
-
-See [CONTRIBUTING](CONTRIBUTING.md)
-
-### Future
-
-See [ROADMAP](ROADMAP.md)
-
-### History
-
-See [CHANGELOG](CHANGELOG.md)
-
-### Community
-
-See [CODE OF CONDUCT](CODE_OF_CONDUCT.md)
-
-## Credits
-
-See [AUTHORS](AUTHORS.md)
-
-## License
-
-See [LICENSE](LICENSE)
+This project is licensed under the terms of the [MIT License](/LICENSE)
