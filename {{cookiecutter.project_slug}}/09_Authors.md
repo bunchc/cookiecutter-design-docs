@@ -1,8 +1,8 @@
 # Authors
 
-## Core Contributor
+## Core Contributors
 
-{% if cookiecutter.remote_provider != "none" %}[{{cookiecutter.git_name}}](https://{{cookiecutter.remote_provider}}/{{cookiecutter.remote_username}}) &lt;{{cookiecutter.git_email}}&gt;{% else %}{{cookiecutter.git_name}} &lt;{{cookiecutter.git_email}}&gt;{% endif %}
+{{cookiecutter.full_name}}
 
 ## Contributors
 
