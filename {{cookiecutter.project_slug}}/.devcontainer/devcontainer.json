@@ -1,0 +1,49 @@
+{
+	"name": "VMware Python SDK",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+		// Update 'VARIANT' to pick a Python version. Rebuild the container 
+		// if it already exists to update. Available variants: 3, 3.6, 3.7, 3.8 
+		"args": { "VARIANT": "3" }
+	},
+
+	// Mount remote workspaces
+	"workspaceMount": "source=remote-workspace,target=/workspace,type=bind,consistency=cached",
+	"workspaceFolder": "/workspace",
+
+	// Use 'settings' to set *default* container specific settings.json values on container create. 
+	// You can edit these settings after create using File > Preferences > Settings > Remote.
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"python.pythonPath": "/usr/local/bin/python",
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+		"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+		"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+		"python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
+		"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+		"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
+		"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
+		"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
+		"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
+		"python.testing.pytestPath": "/usr/local/py-utils/bin/pytest"
+	},
+
+	// Uncomment the next line to run commands after the container is created.
+	"postCreateCommand": "pip3 install -r requirements.txt",
+
+	"mounts": [
+		// "source=${env:HOME}${env:USERPROFILE}/.aspnet/https,target=/home/vscode/.aspnet/https,type=bind"
+	],
+	"extensions": [
+		"oderwat.indent-rainbow",
+		"visualstudioexptteam.vscodeintellicode",
+		"2gua.rainbow-brackets",
+		"ms-python.python"
+	],
+
+	// Comment out the next line to run as root
+	"remoteUser": "vscode"
+}
