@@ -1,0 +1,3 @@
+cookiecutter
+mkdocs
+mkdocs-mermaid-plugin

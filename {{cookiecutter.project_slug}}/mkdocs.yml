@@ -1,0 +1,53 @@
+site_name: {{cookiecutter.project_name}}
+theme: readthedocs
+markdown_extensions:
+  - toc:
+    permalink: True
+plugins:
+  - markdownmermaid
+extra_javascript:
+  - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
+
+nav:
+  - {{cookiecutter.project_name}}:
+    - index.md
+    - Purpose and Overview:
+      - 00-purpose/index.md
+      - 00-purpose/ExecutiveSummary.md
+      - 00-purpose/Overview.md
+      - 00-purpose/Background.md
+      - 00-purpose/UsingThisDocument.md
+      - 00-purpose/RequirementsAndAssumptions.md
+    - Sizing and Scaling:
+      - 01-sizing/index.md
+      - 01-sizing/WorkloadEstimation.md
+      - 01-sizing/Network.md
+      - 01-sizing/Storage.md
+      - 01-sizing/DesignConsiderations.md
+    - Host Design:
+      - 02-host/index.md
+      - 02-host/HardwareLayout.md
+      - 02-host/SelectedPlatform.md
+      - 02-host/DesignConsiderations.md
+    - Network Design:
+      - 03-network/index.md
+      - 03-network/PhysicalDesign.md
+      - 03-network/LogicalDesign.md
+      - 03-network/DesignConsiderations.md
+    - Storage Design:
+      - 04-storage/index.md
+      - 04-storage/PhysicalDesign.md
+      - 04-storage/DesignConsiderations.md
+    - Security Design:
+      - 05-security/index.md
+      - 05-security/DesignConsiderations.md
+    - Operations:
+      - 06-operations/index.md
+      - 06-operations/DesignConsiderations.md
+    - Roadmap:
+      - 07-roadmap/index.md
+    - Conclusion:
+      - 08-conclusion/index.md
+    - authors.md
+    - history.md
+  

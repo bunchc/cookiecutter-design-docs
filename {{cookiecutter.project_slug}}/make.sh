@@ -1,1 +1,0 @@
-docker run --rm -it -w /build -v "$PWD":/build daux/daux.io daux generate
